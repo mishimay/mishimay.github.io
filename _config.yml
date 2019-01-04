@@ -1,6 +1,6 @@
 # main text of home
 name: mishimay
-bio: A Man who travels the world eating noodles
+bio: iOS engineer who loves seamless user experience
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -34,24 +34,24 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
+# facebook: myfacebook
+twitter: mishimaybe
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
 # linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: mishimay
 # gitlab: mygitlab
 # lastfm: mylastfm
-# stackoverflow: 7044681/mystackoverflow
+stackoverflow: 649228/mishimay
 # quora: userquora
 # reddit: username
-medium: medium
+# medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: mishimaybe@gmail.com
 
 authors:
     johndoe:
