@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: 雲の浴槽
-email: your-email@example.com
+# email: your-email@example.com
 # description: >- # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
 #   line in _config.yml. It will appear in your document head meta (for
@@ -57,7 +57,7 @@ plugins:
 #   - vendor/ruby/
 
 permalink: /:title/
-lang: 'ja'
+lang: "ja"
 
 minima:
   date_format: "%Y-%m-%d"
