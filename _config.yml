@@ -58,6 +58,7 @@ plugins:
 
 permalink: /:title/
 lang: "ja"
+google_analytics: G-3GWJYFM695
 
 minima:
   date_format: "%Y-%m-%d"
