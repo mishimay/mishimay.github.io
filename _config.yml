@@ -57,6 +57,7 @@ plugins:
 #   - vendor/ruby/
 
 permalink: /:title/
+lang: 'ja'
 
 minima:
   date_format: "%Y-%m-%d"
