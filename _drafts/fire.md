@@ -2,6 +2,7 @@
 title: "FIREとは　個人的まとめ"
 layout: post
 category: お金
+last_modified_at: 2025-00-00
 ---
 
 ### FIREの意味
