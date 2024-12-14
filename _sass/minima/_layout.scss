@@ -213,7 +213,15 @@
  * Posts
  */
 .post-header {
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit * 2.25;
+
+  .post-meta {
+    float: right;
+  }
+
+  .dt-published {
+    margin-right: 5px;
+  }
 }
 
 .post-title {
