@@ -6,11 +6,11 @@ tag:
 - jekyll
 ---
 
-### やりたいこと
+## やりたいこと
 
 特定のカテゴリへのリンクをクリックすると、そのカテゴリにひも付く記事一覧が表示される。
 
-### 試したこと
+## 試したこと
 
 - [jekyll-archives](https://github.com/jekyll/jekyll-archives) というプラグインがある
   - カテゴリやタグのページを生成してくれるが、Github pages でサポートされていない
