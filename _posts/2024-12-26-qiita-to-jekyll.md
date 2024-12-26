@@ -1,27 +1,32 @@
 ---
-title: "QiitaからJekyllへの移行"
+title: "QiitaからJekyllへ記事を移行"
 layout: post
 category: プログラミング
 ---
 
 ## Qiitaの記事を取得
 
-<https://blog.kotet.jp/2017/01/64fd38ef5e10bf8ae3fa/>
-<https://github.com/kotet/qiita-to-jekyll>
+以下を使わせてもらってダウンロードする。
+
+- <https://blog.kotet.jp/2017/01/64fd38ef5e10bf8ae3fa/>
+- <https://github.com/kotet/qiita-to-jekyll>
 
 ## Jekyllに配置
 
-postフォルダを_postsに
- 何でもよさそうだけどqiitaにした
-imageをassetsに
- imageをqiitaに変更
+- 取得した`post`フォルダ
+  - Jekyllの`_posts`フォルダ内に配置
+  - フォルダ名は何でもよさそうだったので`qiita`に変更した
+- 取得した`image`フォルダ
+  - Jekyllの`assets`フォルダ内に配置
+  - フォルダ名を`qiita`に変更
+    - 記事内の画像リンクが`/assets/qiita/...`になっている
 
+## Qiitaの記事内容を変更
 
 一度公開した記事は限定公開にできない・・・
-<https://help.qiita.com/ja/articles/qiita-private-article>
+- <https://help.qiita.com/ja/articles/qiita-private-article>
 
-
-
+なので以下のPythonスクリプトで自サイトへのリンクを表示するように変更した。
 
 ```
 import urllib.parse
@@ -53,6 +58,8 @@ for item in items:
     # print(result)
 ```
 
-コメントアウトしている
-100記事
-1記事で試してみてほしい
+- 既存の記事を削除しないようにコメントアウトしている
+- 上限100記事
+  - 記事数を増やしたい場合はクエリに`page`を指定する
+  - <https://qiita.com/api/v2/docs#get-apiv2authenticated_useritems>
+- いきなり実行せずに1記事で試してみてほしい
