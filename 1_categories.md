@@ -1,6 +1,7 @@
 ---
 layout: page
 title: カテゴリ一覧
+permalink: /categories/
 ---
 
 {% for category in site.categories %}
