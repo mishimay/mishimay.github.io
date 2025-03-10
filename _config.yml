@@ -31,7 +31,7 @@ url: "https://mishimay.github.io" # the base hostname & protocol for your site, 
 
 # Build settings
 # theme: minima
-remote_theme: jekyll/minima
+remote_theme: jekyll/minima@cc7d230eccdb476713310f41d9c19c484918db05
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
