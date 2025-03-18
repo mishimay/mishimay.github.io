@@ -55,5 +55,40 @@ itemのありなしでalertの表示/非表示をコントロールでき、ま�
 ```
 
 
+## Modifierを作る
+
+```swift
+import SwiftUI
+
+struct AlertModifier<A, M, T>: ViewModifier where A: View, M: View, T: Equatable {
+    @Binding var item: T?
+    @State private var isPresented = false
+    let title: LocalizedStringKey
+    let actions: (T) -> A
+    let message: (T) -> M
+
+    func body(content: Content) -> some View {
+        content
+            .alert(title, isPresented: $isPresented, presenting: item, actions: actions, message: message)
+            .onChange(of: item) { oldValue, newValue in
+                isPresented = newValue != nil
+            }
+            .onChange(of: isPresented) { oldValue, newValue in
+                if !newValue {
+                    item = nil
+                }
+            }
+    }
+}
+
+extension View {
+    func alert<A, M, T>(item: Binding<T?>, title: LocalizedStringKey, actions: @escaping (T) -> A, message: @escaping (T) -> M) -> some View where A: View, M: View, T: Equatable {
+        modifier(AlertModifier(item: item, title: title, actions: actions, message: message))
+    }
+}
+
+```
+
+
 ## 環境
 Xcode Version 16.2 (16C5032a)
