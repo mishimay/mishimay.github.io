@@ -1,5 +1,5 @@
 ---
-title: "[UIKit] UIKitに任意のオブジェクトを保持させる"
+title: "[UIKit] UIViewに任意のオブジェクトを保持させる"
 layout: post
 category: プログラミング
 tag:
@@ -7,7 +7,7 @@ tag:
 - uikit
 ---
 
-サブクラスを作成すれば良いのですが、そこまでするのが面倒なときにUIKitのCALayerにkey-value方式で自由に値をセットできます。
+サブクラスを作成すれば良いのですが、そこまでするのが面倒なときにUIViewのCALayerにkey-value方式で自由に値をセットできます。
 
 ```swift
 uiView.layer.setValue("someValue", forKey: "someKey")
