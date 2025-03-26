@@ -26,3 +26,7 @@ Key-Value Coding Extensions
 
 - <https://stackoverflow.com/questions/399987/how-do-i-attatch-a-key-value-pair-to-a-uiview-on-iphone/400251#400251>
 - <https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Key-ValueCodingExtensions/Key-ValueCodingExtensions.html>
+
+
+## 環境
+Xcode Version 16.2 (16C5032a)

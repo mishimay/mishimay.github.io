@@ -19,3 +19,7 @@ func string(from data: Data) -> String? {
 ## 参考
 
 <https://stackoverflow.com/questions/59832706/how-to-detect-encoding-in-data-based-on-a-string>
+
+
+## 環境
+swift-driver version: 1.115.1 Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
