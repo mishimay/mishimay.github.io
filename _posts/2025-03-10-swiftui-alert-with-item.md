@@ -82,7 +82,7 @@ struct AlertModifier<A, M, T>: ViewModifier where A: View, M: View, T: Equatable
 }
 
 extension View {
-    func alert<A, M, T>(item: Binding<T?>, title: LocalizedStringKey, actions: @escaping (T) -> A, message: @escaping (T) -> M) -> some View where A: View, M: View, T: Equatable {
+    func alert<A, M, T>(item: Binding<T?>, title: LocalizedStringKey, @ViewBuilder actions: @escaping (T) -> A, @ViewBuilder message: @escaping (T) -> M) -> some View where A: View, M: View, T: Equatable {
         modifier(AlertModifier(item: item, title: title, actions: actions, message: message))
     }
 }
