@@ -60,6 +60,7 @@ plugins:
 
 permalink: /:title/
 lang: "ja"
+timezone: Asia/Tokyo
 google_analytics: G-3GWJYFM695
 
 minima:
