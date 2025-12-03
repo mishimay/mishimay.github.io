@@ -1,5 +1,6 @@
 ---
 title: "[Swift] TimeZone(identifier: \"Asia/Tokyo\") ≠ TimeZone(secondsFromGMT: 60 * 60 * 9)"
+date: 2025-12-03 0:00:00 +0900
 layout: post
 category: プログラミング
 tag:
